@@ -2,55 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31485180-764c-4b51-a21a-623007629a65" name="Changes" comment="no registry">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/emptyBox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/emptyFavs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fav-active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fav-inactive.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fav2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/favourites.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/orderComplete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/plus-active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/plusBtn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/removeCartItemBtn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/InfoBox.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useWindowDimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Favourites/Favourites.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Orders/Orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +58,8 @@
       <workItem from="1668073737657" duration="2201000" />
       <workItem from="1668556424457" duration="1298000" />
       <workItem from="1668561126745" duration="742000" />
+      <workItem from="1668562375410" duration="649000" />
+      <workItem from="1668988046869" duration="1118000" />
     </task>
     <task id="LOCAL-00001" summary="no registry">
       <created>1668044147107</created>
