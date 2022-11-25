@@ -1,9 +1,10 @@
 import './App.scss';
 
-
 import Header from "./components/Header/Header";
 import Drawer from "./components/Drawer/Drawer";
+
 import {useEffect, useState} from "react";
+
 import axios from "axios";
 import Home from "./pages/Home/Home";
 import {Route, Routes} from "react-router-dom";
@@ -11,6 +12,9 @@ import Favourites from "./pages/Favourites/Favourites";
 import AppContext from "./context";
 import Orders from "./pages/Orders/Orders";
 import useWindowDimensions from "./hooks/useWindowDimensions";
+
+import AppRouter from "./components/AppRouter";
+import {LOGIN_ROUTE} from "./utils/consts";
 
 function App() {
 
@@ -113,7 +117,9 @@ function App() {
         return favouriteSneakers.some(s => Number(s.parentId) === Number(id));
     }
 
+
     return (
+
         <AppContext.Provider value={{
             favouriteSneakers,
             isItemCartAdded,
@@ -126,12 +132,15 @@ function App() {
             loading,
             height, width
         }}>
+
             <div className="wrapper">
                 {<Drawer onClickCloseCart={() => setIsCartOpened(false)}
                          cartSneakers={cartSneakers}
                          onClickCartRemove={onClickCartRemove}
                          isCartOpened={isCartOpened}
                 />}
+
+
 
 
                 <Header onClickCart={() => setIsCartOpened(true)}/>
@@ -157,9 +166,12 @@ function App() {
                     <Route path="/orders" exact
                            element={<Orders/>}/>
 
+                    <Route path={LOGIN_ROUTE} exact
+                           element={<AppRouter/>}/>
+
+
 
                 </Routes>
-
 
             </div>
         </AppContext.Provider>
