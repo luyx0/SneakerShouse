@@ -3,7 +3,7 @@ import './App.scss';
 import Header from "./components/Header/Header";
 import Drawer from "./components/Drawer/Drawer";
 
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 
 import axios from "axios";
 import Home from "./pages/Home/Home";
@@ -13,10 +13,16 @@ import AppContext from "./context";
 import Orders from "./pages/Orders/Orders";
 import useWindowDimensions from "./hooks/useWindowDimensions";
 
-import AppRouter from "./components/AppRouter";
-import {LOGIN_ROUTE} from "./utils/consts";
+import Auth from "./pages/Login/Auth";
+import Admin from "./pages/Login/Admin";
+import {observer} from "mobx-react-lite";
+import {Context} from "./index";
+import {check} from "./http/userAPI";
 
-function App() {
+
+const App = observer(() => {
+
+    const {user} = useContext(Context)
 
     const [sneakers, setSneakers] = useState([]);
     const [cartSneakers, setCartSneakers] = useState([]);
@@ -29,6 +35,12 @@ function App() {
 
 
     useEffect(() => {
+
+
+        check().then(data =>{
+            user.setUser(true)
+            user.setIsAuth(true)
+        }).finally(() => setLoading(false))
 
         const fetchData = async () => {
             try {
@@ -120,6 +132,7 @@ function App() {
 
     return (
 
+
         <AppContext.Provider value={{
             favouriteSneakers,
             isItemCartAdded,
@@ -146,6 +159,7 @@ function App() {
                 <Header onClickCart={() => setIsCartOpened(true)}/>
 
                 <Routes>
+
                     <Route path="/" element={<Home searchValue={searchValue}
                                                    setSearchValue={setSearchValue}
                                                    onClickCartAdd={onClickCartAdd}
@@ -157,17 +171,23 @@ function App() {
                                                    width={width}
                     />}/>
 
-
                     <Route path="/favourites" exact
                            element={<Favourites
                                onClickCartAdd={onClickCartAdd}
                                onAddFavourite={onAddFavourite}
                            />}/>
+
                     <Route path="/orders" exact
                            element={<Orders/>}/>
 
-                    <Route path={LOGIN_ROUTE} exact
-                           element={<AppRouter/>}/>
+                    <Route path="/login" exact
+                           element={<Auth/>}/>
+
+                    <Route path="/registration" exact
+                           element={<Auth/>}/>
+
+                    <Route path="/admin" exact
+                           element={<Admin/>}/>
 
 
 
@@ -176,6 +196,6 @@ function App() {
             </div>
         </AppContext.Provider>
     );
-}
+});
 
 export default App;

@@ -6,18 +6,27 @@ import fav from "../../assets/favourites.svg";
 import consumer from "../../assets/user.svg";
 
 import s from "./Header.module.scss";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import AppContext from "../../context";
 import {Context} from "../../index";
-import {HOME_ROUTE, LOGIN_ROUTE} from "../../utils/consts";
+import {HOME_ROUTE, LOGIN_ROUTE, ADMIN_ROUTE} from "../../utils/consts";
 
 import {Button, Nav} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
+
+import { useNavigate } from "react-router-dom";
 
 const Header = observer(({onClickCart}) => {
 
     const {cartSneakers} = useContext(AppContext);
     const {user} = useContext(Context);
+
+    const navigate = useNavigate()
+
+    const logOut = () => {
+        user.setUser({})
+        user.setIsAuth(false)
+    }
 
 
     return (
@@ -30,18 +39,24 @@ const Header = observer(({onClickCart}) => {
             </NavLink>
             <div className={s.rightSide}>
                 {user.isAuth ?
-                    <Nav className="" style={{color: 'white'}}>
-                        <Button variant={"outline-light"}>
+                    <Nav style={{color: 'white'}}>
+                        <Button
+                            className={s.log}
+                            variant={"outline-light"}
+                            onClick={() => navigate(ADMIN_ROUTE)}
+                        >
                             Admin
                         </Button>
-                        <Button variant={"outline-light"} className="ml-4">
+                        <Button variant={"outline-light"}
+                                onClick={() => logOut()}
+                                className={s.log}>
                             Exit
                         </Button>
                     </Nav>
                     :
                     <Nav style={{color: 'white'}}>
                         <NavLink to={LOGIN_ROUTE}>
-                            <Button variant={"outline-light"} onClick={() => user.setIsAuth(true)}>
+                            <Button  className={s.log} onClick={() => navigate.push(LOGIN_ROUTE)}>
                                 Sign in
                             </Button>
                         </NavLink>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31485180-764c-4b51-a21a-623007629a65" name="Changes" comment="no registry">
+    <list default="true" id="31485180-764c-4b51-a21a-623007629a65" name="Changes" comment="almost done Sign in(80%)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -73,7 +73,14 @@
       <workItem from="1669004205821" duration="1342000" />
       <workItem from="1669051339783" duration="2545000" />
       <workItem from="1669077639454" duration="6391000" />
-      <workItem from="1669348127677" duration="5160000" />
+      <workItem from="1669348127677" duration="6856000" />
+      <workItem from="1669514736130" duration="958000" />
+      <workItem from="1669830844107" duration="451000" />
+      <workItem from="1670703141347" duration="1560000" />
+      <workItem from="1670773188280" duration="3856000" />
+      <workItem from="1670786348863" duration="4393000" />
+      <workItem from="1670842996379" duration="11104000" />
+      <workItem from="1670860460266" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="no registry">
       <created>1668044147107</created>
@@ -89,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668989342700</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="almost done Sign in(80%)">
+      <created>1669353365998</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669353365998</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="no registry" />
-    <option name="LAST_COMMIT_MESSAGE" value="no registry" />
+    <MESSAGE value="almost done Sign in(80%)" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done Sign in(80%)" />
   </component>
 </project>

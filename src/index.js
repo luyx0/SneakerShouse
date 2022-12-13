@@ -7,6 +7,7 @@ import 'macro-css';
 
 export const Context = createContext(null)
 
+console.log(process.env.REACT_APP_API_URL)
 
 ReactDOM.render(
     <React.StrictMode>
