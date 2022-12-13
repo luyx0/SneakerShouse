@@ -1,4 +1,7 @@
-# React Sneakers
+SneakerShouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+client - npm start
+
+server - npm run div
+
 
